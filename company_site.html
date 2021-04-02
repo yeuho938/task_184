@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Company site</title>
+  <link rel="stylesheet" href="css/company.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <style>
+    ul li {
+      width: 100px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="navigation" id="navigation">
+    <div class="head">
+      <i class="fas fa-bars" id="icon"> </i>
+      <p onclick="closeSidebar()" id="sidebarIcon"> Company name</p>
+    </div>
+    <ul id="menu">
+      <li> CLode Menu</li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#showcase">Showcase</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#designers">Designers</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="sidebar">
+      <div id="showcase">
+        <p><b>Interior Design </b></p>
+        <h1><b>Showcase</b></h1>
+        <hr style="width:50px;border:5px solid red; float: left;border-radius: 20px">
+        <div class="image">
+          <img class="img col1" src="https://www.w3schools.com/w3images/kitchenconcrete.jpg">
+          <img class="img col1" src="https://www.w3schools.com/w3images/atrium.jpg">
+          <img class="img col2" src="https://www.w3schools.com/w3images/livingroom.jpg">
+          <img class="img col2" src="https://www.w3schools.com/w3images/bedroom.jpg">
+          <img class="img col2" src="https://www.w3schools.com/w3images/diningroom.jpg">
+          <img class="img col2" src="https://www.w3schools.com/w3images/livingroom2.jpg">
+        </div>
+      </div>
+      <div id="services">
+        <h1><b>Services.</b></h1>
+        <hr style="width:50px;border:5px solid red; float: left;border-radius: 20px">
+        <br>
+        <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+        <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div id="designers">
+        <h1><b>Designers.</b></h1>
+        <hr style="width:50px;border:5px solid red; float: left;border-radius: 20px">
+        <br>
+        <p>The best team in the world.</p>
+        <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+          id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p><b>Our designers are thoughtfully chosen:</b></p>
+        <div class="card">
+          <div class="col3">
+            <img src="https://www.w3schools.com/w3images/team2.jpg">
+            <h2><b>John Doe</b></h2>
+            <h3>CEO & Founder</h3>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+          <div class="col3">
+            <img src="https://www.w3schools.com/w3images/team1.jpg">
+            <h2><b>Jane Doe</b></h2>
+            <h3>Designer</h3>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+          <div class="col3">
+            <img src="https://www.w3schools.com/w3images/team3.jpg">
+            <h2><b>Mike Ross</b></h2>
+            <h3>Architect</h3>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+        </div>
+      </div>
+      <div id="packages">
+        <h1><b>Packages</b></h1>
+        <hr style="width:50px;border:5px solid red; float: left; border-radius: 20px">
+        <br>
+        <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure</p>
+
+        <div id="table">
+          <div class="table-col1">
+            <ul>
+              <li class="basic"> Basic</li>
+              <li class="table-item"> Floorplanning</li>
+              <li class="table-item"> 10 hours support</li>
+              <li class="table-item"> Photography</li>
+              <li class="table-item"> 20% furniture discount</li>
+              <li class="table-item"> Good deals</li>
+              <li class="table-item"><h2>$ 199</h2>per room</li>
+              <li class="table-item">
+                <button> Sign Up</button>
+              </li>
+            </ul>
+          </div>
+          <div class="table-col2">
+            <ul>
+              <li class="pro"> Pro</li>
+              <li class="table-item"> Floorplanning</li>
+              <li class="table-item"> 50 hours support</li>
+              <li class="table-item"> Photography</li>
+              <li class="table-item"> 50 hours support</li>
+              <li class="table-item"> GREAT deals</li>
+              <li class="table-item" ><h2><b>$ 249</b></h2> per room</li>
+              <li class="table-item">
+                <button> Sign Up</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="contact">
+        <h1><b> Contact.</b></h1>
+        <hr style="width:50px;border:5px solid red; float: left;border-radius: 20px">
+        <br>
+        <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new
+          people.</p>
+        <form>
+          <label> Name</label>
+          <input type="text" class="name" required>
+          <label> Email</label>
+          <input type="text" class="email" required>
+          <label> Message</label>
+          <input type="text" class="message" required>
+          <button type="submit"> Send Message</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+    </div>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
