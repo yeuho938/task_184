@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Company site</title>
   <link rel="stylesheet" href="css/company.css">
+<!--  <link rel="stylesheet" href="css/website.scss">-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
         integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
@@ -18,10 +19,11 @@
 <div class="container">
   <div class="navigation" id="navigation">
     <div class="head">
-      <i class="fas fa-bars" id="icon"> </i>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars" id="icon"> </i>
+      </a>
       <p onclick="closeSidebar()" id="sidebarIcon"> Company name</p>
     </div>
-    <ul id="menu">
+    <ul id="menu" class="menu">
       <li> CLode Menu</li>
       <li><a href="#home">Home</a></li>
       <li><a href="#showcase">Showcase</a></li>
@@ -40,10 +42,10 @@
         <div class="image">
           <img class="img col1" src="https://www.w3schools.com/w3images/kitchenconcrete.jpg">
           <img class="img col1" src="https://www.w3schools.com/w3images/atrium.jpg">
-          <img class="img col2" src="https://www.w3schools.com/w3images/livingroom.jpg">
-          <img class="img col2" src="https://www.w3schools.com/w3images/bedroom.jpg">
-          <img class="img col2" src="https://www.w3schools.com/w3images/diningroom.jpg">
-          <img class="img col2" src="https://www.w3schools.com/w3images/livingroom2.jpg">
+          <img  src="https://www.w3schools.com/w3images/livingroom.jpg">
+          <img  src="https://www.w3schools.com/w3images/bedroom.jpg">
+          <img src="https://www.w3schools.com/w3images/diningroom.jpg">
+          <img  src="https://www.w3schools.com/w3images/livingroom2.jpg">
         </div>
       </div>
       <div id="services">
@@ -154,6 +156,15 @@
     </div>
   </div>
 </div>
-<script src="js/main.js"></script>
+<script>
+  function myFunction() {
+    var x = document.getElementById("menu");
+    if (x.className === "menu") {
+      x.className += " responsive";
+    } else {
+      x.className = "menu";
+    }
+  }
+</script>
 </body>
 </html>
